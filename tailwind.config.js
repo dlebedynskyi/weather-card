@@ -4,8 +4,9 @@ export default {
   theme: {
     screens: {
       tiny: '0px',
-      column: '400px',
-      row: '700px',
+      sm: '400px',
+      md: '700px',
+      lg: '1000px',
     },
     extend: {},
   },
