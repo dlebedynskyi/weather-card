@@ -1,3 +1,8 @@
+import partlyCloudyRainIcon from '/assets/ic_weather_partly_cloudy_rain.svg';
+import partlyCloudyIcon from '/assets/ic_weather_partly_cloudy.svg';
+import rainyIcon from '/assets/ic_weather_rainy.svg';
+import sunnyIcon from '/assets/ic_weather_sunny.svg';
+
 export type CONDITIONS =
   | 'PCLOUD_RAIN'
   | 'PCLOUD'
@@ -7,19 +12,19 @@ export type CONDITIONS =
 export const MAP: Record<CONDITIONS, { label: string; icon: string }> = {
   PCLOUD_RAIN: {
     label: 'Partly cloudy w/Rain',
-    icon: '/assets/ic_weather_partly_cloudy_rain.svg',
+    icon: partlyCloudyRainIcon,
   },
   PCLOUD: {
     label: 'Partly cloudy',
-    icon: '/assets/ic_weather_partly_cloudy.svg',
+    icon: partlyCloudyIcon,
   },
   RAINY: {
     label: 'Rainy',
-    icon: '/assets/ic_weather_rainy.svg',
+    icon: rainyIcon,
   },
   SUNNY: {
     label: 'Sunny',
-    icon: '/assets/ic_weather_sunny.svg',
+    icon: sunnyIcon,
   },
 };
 
